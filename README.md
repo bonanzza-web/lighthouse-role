@@ -1,38 +1,19 @@
-Role Name
-=========
 
-A brief description of the role goes here.
+# Роль установки Lighthouse для стека ClickHouse, Vector и Lighthouse
 
-Requirements
-------------
+Эта роль предназначена для автоматизированной установки и настройки Lighthouse в сочетании с ClickHouse и Vector. Lighthouse - это мощный инструмент визуализации и анализа данных, который интегрируется с ClickHouse и Vector, обеспечивая вам полный стек для сбора, обработки, хранения и анализа логов.
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+# Основные задачи роли:
 
-Role Variables
---------------
+    1. Установка Lighthouse: Роль позволяет легко установить последнюю версию Lighthouse с официальных репозиториев.
+    2. Интеграция с ClickHouse и Vector: Роль автоматически настраивает Lighthouse для работы с ClickHouse и Vector, обеспечивая плавную интеграцию всего стека.
+    3. Настройка конфигурации: Роль предоставляет возможность настроить параметры Lighthouse через переменные для более гибкой настройки.
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+# Зависимости:
 
-Dependencies
-------------
+Для корректной работы роли требуется предварительно установленные и настроенные ClickHouse и Vector.    
+С этой ролью вы сможете быстро и удобно настроить и интегрировать Lighthouse в ваш стек ClickHouse и Vector, что позволит вам эффективно анализировать и визуализировать ваши данные.
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+### Плейбук для установки стека можно найти по ссылке:
 
-Example Playbook
-----------------
-
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
-
-License
--------
-
-BSD
-
-Author Information
-------------------
-
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+https://github.com/bonanzza-web/ansible-hw/tree/ansible-hw-04/ansible-hw-04/playbook
